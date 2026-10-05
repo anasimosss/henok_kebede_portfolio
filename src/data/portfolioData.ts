@@ -19,8 +19,8 @@ export const profile = {
   location: "Addis Ababa, Ethiopia",
   timezone: "EAT (UTC+3)",
   availability: "Open to full-time and contract software engineering roles",
-  github: "https://github.com/@nasimosss",
-  linkedin: "https://linkedin.com/in/",
+  github: "https://github.com/anasimosss",
+  linkedin: "https://www.linkedin.com/in/henok-kebede-81b808440/",
 } as const;
 
 export const navLinks: NavLink[] = [
@@ -321,7 +321,7 @@ export const projects: Project[] = [
       "A ticketing desk with categories, SLA timers, role-based visibility and a one-click weekly report that replaced manual spreadsheet roll-ups.",
     tech: ["React", "TypeScript", "ASP.NET Core", "SQL Server"],
     metric: "Email threads replaced by tracked tickets with owners and due dates",
-    repo: "https://github.com/henok-kebede",
+    repo: "https://github.com/anasimosss",
   },
   {
     id: "sme-ledger",
@@ -334,7 +334,7 @@ export const projects: Project[] = [
       "A double-entry ledger API with idempotent posting, daily balance snapshots and a reconciliation endpoint that matches gateway payouts to entries.",
     tech: ["C#", "EF Core", "SQL Server", "REST"],
     metric: "Every posting balances by construction, with an audit trail per entry",
-    repo: "https://github.com/henok-kebede",
+    repo: "https://github.com/anasimosss",
   },
   {
     id: "checkout-module",
@@ -347,7 +347,7 @@ export const projects: Project[] = [
       "A reusable checkout module over the Chapa API: hosted checkout, verified callbacks, an order state machine and a React order tracker.",
     tech: ["ASP.NET Core", "Chapa API", "Webhooks", "React"],
     metric: "Online payment added to a storefront in under a day",
-    repo: "https://github.com/henok-kebede",
+    repo: "https://github.com/anasimosss",
   },
   {
     id: "branch-query-dashboard",
@@ -360,7 +360,7 @@ export const projects: Project[] = [
       "A secured internal web dashboard backed by parameterised SQL Server stored procedures: managers pick a date range and branch, the API executes the right query with covering indexes, and the result renders as a filterable table with a one-click CSV export.",
     tech: ["ASP.NET Core", "SQL Server", "React", "TypeScript", "Role-based auth"],
     metric: "Daily summary time cut from ~35 minutes to under 2 minutes for branch managers",
-    repo: "https://github.com/henok-kebede",
+    repo: "https://github.com/anasimosss",
   },
   {
     id: "api-health-monitor",
@@ -373,7 +373,7 @@ export const projects: Project[] = [
       "A lightweight polling service that reads the payment table on a schedule, cross-checks every Pending row older than five minutes against the Chapa transaction API, and writes a structured alert log plus triggers a reconciliation sweep if the mismatch count exceeds a threshold.",
     tech: ["C#", "ASP.NET Core Background Service", "Chapa API", "SQL Server", "Structured logging"],
     metric: "Ledger drift caught within 5 minutes instead of surfacing through user complaints",
-    repo: "https://github.com/henok-kebede",
+    repo: "https://github.com/anasimosss",
   },
 ];
 
@@ -475,14 +475,14 @@ export const contactChannels: ContactChannel[] = [
     id: "github",
     label: "GitHub",
     value: "github.com/henok-kebede",
-    href: "https://github.com/henok-kebede",
+    href: "https://github.com/anasimosss",
     hint: "Source, experiments and API samples.",
   },
   {
     id: "linkedin",
     label: "LinkedIn",
     value: "linkedin.com/in/henok-kebede",
-    href: "https://linkedin.com/in/henok-kebede",
+    href: "https://www.linkedin.com/in/henok-kebede-81b808440/",
     hint: "Work history and recommendations.",
   },
   {
