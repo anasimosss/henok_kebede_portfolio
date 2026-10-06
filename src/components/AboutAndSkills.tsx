@@ -26,7 +26,7 @@ function SkillCard({ categoryId, featured = false }: { categoryId: string; featu
         featured ? "lg:col-span-2" : ""
       }`}
     >
-      <div className="flex items-center gap-3">
+     <div className="flex min-w-0 flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
         <span className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 bg-sky-400/10 text-sky-300">
           <Icon className="h-4.5 w-4.5" aria-hidden />
         </span>
@@ -37,9 +37,9 @@ function SkillCard({ categoryId, featured = false }: { categoryId: string; featu
       <ul className={`mt-5 grid gap-x-6 gap-y-3.5 ${featured ? "sm:grid-cols-2" : ""}`}>
         {category.items.map((item) => (
           <li key={item.name}>
-            <div className="flex items-baseline justify-between gap-3">
-              <span className="text-[13.5px] font-medium text-slate-200">{item.name}</span>
-              <span className="font-mono text-[10.5px] uppercase tracking-wider text-slate-500">
+            <div className="flex min-w-0 flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+              <span className="min-w-0 break-words text-[13.5px] font-medium text-slate-200">{item.name}</span>
+              <span className="shrink-0 font-mono text-[10.5px] uppercase tracking-wider text-slate-500">
                 {item.tag}
               </span>
             </div>
@@ -65,7 +65,7 @@ export default function AboutAndSkills() {
     <>
       <section id="about" className="relative px-5 py-20 sm:px-8 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-12 lg:gap-14">
-          <Reveal className="lg:col-span-5">
+          <Reveal className="min-w-0 lg:col-span-5">
             <div className="relative mx-auto max-w-sm lg:mx-0">
               <div
                 aria-hidden
@@ -93,7 +93,7 @@ export default function AboutAndSkills() {
             </div>
           </Reveal>
 
-          <div className="lg:col-span-7">
+          <div className="min-w-0 lg:col-span-7">
             <Reveal>
               <SectionHeading
                 title="Business process first, framework second."

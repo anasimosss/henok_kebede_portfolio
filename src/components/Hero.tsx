@@ -269,7 +269,7 @@ export default function Hero() {
             initial={reduce ? { opacity: 1 } : { opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: EASE }}
-            className="inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-[12px] font-medium tracking-wide text-slate-300"
+           className="inline-flex max-w-full flex-wrap items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-[12px] font-medium tracking-wide text-slate-300"
           >
             <span className="relative flex h-1.5 w-1.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
